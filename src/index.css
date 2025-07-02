@@ -1,0 +1,635 @@
+@import "tailwindcss";
+
+/* Custom Walmart-branded styles */
+.walmart-gradient {
+  background: linear-gradient(135deg, #004c91 0%, #0066cc 100%);
+}
+
+.chat-bubble-user {
+  background: linear-gradient(135deg, #004c91 0%, #0066cc 100%);
+  color: white;
+  padding: 16px 20px;
+  border-radius: 20px 20px 4px 20px;
+  box-shadow: 0 4px 12px rgba(0, 76, 145, 0.25);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.chat-bubble-ai {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e293b;
+  border: 2px solid #e2e8f0;
+  padding: 20px 24px;
+  border-radius: 20px 20px 20px 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Markdown-style text formatting */
+.ai-message-content {
+  color: #1e293b;
+  line-height: 1.7;
+}
+
+.ai-message-content strong,
+.ai-message-content .bold {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ai-message-content h1,
+.ai-message-content h2,
+.ai-message-content h3,
+.ai-message-content h4 {
+  font-weight: 700;
+  color: #004c91;
+  margin: 12px 0 8px 0;
+}
+
+.ai-message-content h1 { font-size: 20px; }
+.ai-message-content h2 { font-size: 18px; }
+.ai-message-content h3 { font-size: 16px; }
+.ai-message-content h4 { font-size: 15px; }
+
+.ai-message-content ul {
+  margin: 8px 0;
+  padding-left: 0;
+}
+
+.ai-message-content li {
+  margin: 4px 0;
+  padding-left: 4px;
+  list-style: none;
+}
+
+.ai-message-content em {
+  font-style: italic;
+  color: #64748b;
+}
+
+.ai-message-content code {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #dc2626;
+}
+
+/* Agent badges with better styling */
+.agent-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agent-badge.discovery {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.agent-badge.details {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+}
+
+.agent-badge.cart {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+}
+
+.agent-badge.payment {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: white;
+}
+
+.agent-badge.coordinator,
+.agent-badge.general {
+  background: linear-gradient(135deg, #004c91 0%, #0066cc 100%);
+  color: white;
+}
+
+/* Product cards with enhanced styling */
+.product-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  border-color: #004c91;
+  box-shadow: 0 8px 24px rgba(0, 76, 145, 0.15);
+  transform: translateY(-2px);
+}
+
+.product-image {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+.product-title {
+  font-weight: 600;
+  color: #1e293b;
+  margin: 8px 0 4px 0;
+  line-height: 1.4;
+}
+
+.product-title:hover {
+  color: #004c91;
+  cursor: pointer;
+}
+
+.product-price {
+  font-weight: 700;
+  font-size: 16px;
+  color: #004c91;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 4px 0;
+}
+
+.product-rating .star {
+  color: #fbbf24;
+}
+
+.product-rating .rating-text {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* Order summary cards */
+.order-summary-card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 2px solid #22c55e;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+  box-shadow: 0 4px 16px rgba(34, 197, 94, 0.15);
+}
+
+.discount-highlight {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 2px solid #f59e0b;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+}
+
+.discount-highlight .discount-icon {
+  color: #d97706;
+}
+
+.discount-highlight .discount-text {
+  color: #92400e;
+  font-weight: 600;
+}
+
+/* Cart items styling */
+.cart-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 8px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item:hover {
+  border-color: #004c91;
+  box-shadow: 0 4px 12px rgba(0, 76, 145, 0.1);
+}
+
+.cart-total {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border: 2px solid #3b82f6;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.sparky-glow {
+  box-shadow: 0 0 20px rgba(0, 76, 145, 0.3);
+}
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #004c91;
+  border-radius: 3px;
+}
+
+/* Animation keyframes */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(0, 76, 145, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 76, 145, 0.8);
+  }
+}
+
+.sparky-pulse {
+  animation: pulse-glow 2s infinite;
+}
+
+/* Enhanced button styles for better visibility */
+.action-button-primary {
+  background: #004c91 !important;
+  color: white !important;
+  border: 2px solid #004c91 !important;
+  box-shadow: 0 4px 12px rgba(0, 76, 145, 0.3) !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease !important;
+}
+
+.action-button-primary:hover {
+  background: #003366 !important;
+  border-color: #003366 !important;
+  box-shadow: 0 6px 16px rgba(0, 76, 145, 0.4) !important;
+  transform: translateY(-1px);
+}
+
+.action-button-secondary {
+  background: #16a34a !important;
+  color: white !important;
+  border: 2px solid #16a34a !important;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease !important;
+}
+
+.action-button-secondary:hover {
+  background: #15803d !important;
+  border-color: #15803d !important;
+  transform: translateY(-1px);
+}
+
+.action-button-tertiary {
+  background: #ea580c !important;
+  color: white !important;
+  border: 2px solid #ea580c !important;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease !important;
+}
+
+.action-button-tertiary:hover {
+  background: #c2410c !important;
+  border-color: #c2410c !important;
+  transform: translateY(-1px);
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  .chat-bubble-ai,
+  .chat-bubble-user {
+    padding: 16px 18px;
+    font-size: 13px;
+  }
+  
+  .agent-badge {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+  
+  .product-card {
+    padding: 12px;
+  }
+  
+  .action-button-primary,
+  .action-button-secondary,
+  .action-button-tertiary {
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* Utilities */
+.text-walmart-blue {
+  color: #004c91;
+}
+
+.bg-walmart-blue {
+  background-color: #004c91;
+}
+
+.border-walmart-blue {
+  border-color: #004c91;
+}
+
+.text-walmart-yellow {
+  color: #ffc220;
+}
+
+.bg-walmart-yellow {
+  background-color: #ffc220;
+}
+
+/* Enhanced Product Detail Buttons */
+.product-detail-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+  align-items: stretch;
+}
+
+.product-detail-buttons button {
+  flex: 0 0 auto;
+  min-width: 140px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.product-detail-buttons .action-button-primary {
+  background: linear-gradient(135deg, #004c91 0%, #0066cc 100%);
+  color: white;
+  border-color: #004c91;
+}
+
+.product-detail-buttons .action-button-primary:hover {
+  background: linear-gradient(135deg, #003a73 0%, #0055aa 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 76, 145, 0.4);
+}
+
+.product-detail-buttons .buy-now-button {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: white;
+  border-color: #dc2626;
+  font-weight: 700;
+}
+
+.product-detail-buttons .buy-now-button:hover {
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.4);
+}
+
+/* Features with proper emoji alignment */
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  padding: 8px 0;
+}
+
+.feature-emoji {
+  font-size: 18px;
+  margin-right: 12px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+}
+
+.feature-text {
+  font-weight: 700;
+  color: #1f2937;
+  flex: 1;
+}
+
+.feature-description {
+  color: #6b7280;
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+/* Product info section styling */
+.product-info-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px 16px;
+  margin: 20px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+}
+
+.product-info-label {
+  font-weight: 700;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.product-info-value {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+/* Improved typography for AI messages */
+.ai-message-content .product-specs {
+  margin: 16px 0;
+}
+
+.ai-message-content .product-specs .spec-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 4px 0;
+}
+
+.ai-message-content .product-specs .spec-emoji {
+  font-size: 16px;
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.ai-message-content .product-specs .spec-label {
+  font-weight: 700;
+  color: #374151;
+  margin-right: 6px;
+}
+
+.ai-message-content .product-specs .spec-value {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+
+/* Enhanced Feature List Styling */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.feature-icon {
+  font-size: 18px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-content {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.feature-title {
+  font-weight: 700;
+  color: #004c91;
+  margin-bottom: 4px;
+}
+
+.feature-description {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Enhanced Bullet Points */
+.bullet-points {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+  padding-left: 0;
+}
+
+.bullet-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.bullet-point .emoji {
+  font-size: 16px;
+  min-width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bullet-point .text {
+  flex: 1;
+  line-height: 1.4;
+}
+
+/* Requirements Display Styling */
+.requirements-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 16px 0;
+  padding: 16px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%);
+  border-radius: 12px;
+  border-left: 4px solid #004c91;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.requirement-icon {
+  font-size: 18px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.requirement-label {
+  font-weight: 700;
+  color: #004c91;
+  min-width: 80px;
+}
+
+.requirement-value {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Enhanced Button Alignment */
+.product-detail-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 16px 0;
+}
+
+.product-detail-buttons button {
+  min-height: 44px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+}
+
+/* Buy Now Button - Special styling */
+.buy-now-button {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: white;
+  border: 2px solid #dc2626;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+  font-weight: 700;
+}
+
+.buy-now-button:hover {
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.4);
+}
