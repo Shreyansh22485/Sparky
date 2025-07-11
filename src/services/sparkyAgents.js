@@ -161,7 +161,7 @@ Based on your request: "${message}"
 
 I found **${recommendations.length} perfect matches** for you:
 
-**💰 Budget:** Under $50
+**💰 Budget:** Under $500
 **🎂 Age:** 8 years old
 **🎉 Occasion:** Birthday
 
@@ -586,10 +586,10 @@ Perfect timing for that birthday! Want to add to cart?`,
 
 I'm designed to make your shopping experience seamless and fun. Here's what makes me special:
 
-**🎯 Smart Recommendations** - I understand your needs and budget
-**🛒 End-to-End Shopping** - From discovery to checkout, all in chat  
-**🤖 Multi-Agent System** - Specialized agents for different tasks
-**⚡ Instant Responses** - No page loading, just conversation
+** 🎯 Smart Recommendations** - I understand your needs and budget
+** 🛒 End-to-End Shopping** - From discovery to checkout, all in chat  
+** 🤖 Multi-Agent System** - Specialized agents for different tasks
+** ⚡ Instant Responses** - No page loading, just conversation
 
 Try saying something like:
 • "I need a birthday gift for my 8-year-old nephew, budget $50"
