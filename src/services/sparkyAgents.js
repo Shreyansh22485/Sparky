@@ -193,7 +193,7 @@ Here are my **top recommendations**:`;
 
 Your current cart:
 ${this.context.cart.length === 0 ? '• Empty cart' : 
-  this.context.cart.map(item => `• ${item.name} - $${item.price} x${item.quantity}`).join('\\n')}
+  this.context.cart.map(item => `• ${item.name} - $${item.price} x${item.quantity}`).join('\n')}
 
 **Total: $${cartTotal.toFixed(2)}**
 
